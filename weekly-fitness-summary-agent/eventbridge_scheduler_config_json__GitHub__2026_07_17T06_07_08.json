@@ -1,0 +1,13 @@
+
+{
+  "ScheduleName": "WeeklyFitnessSummarySchedule",
+  "ScheduleExpression": "cron(30 0 ? * MON *)",
+  "ScheduleExpressionTimezone": "Asia/Kolkata",
+  "Description": "Triggers Weekly Fitness Summary Agent every Monday at 6:00 AM IST",
+  "Target": {
+    "Service": "AWS Lambda",
+    "Function": "WeeklyFitnessSummaryAgent"
+  },
+  "State": "ENABLED"
+}
+
